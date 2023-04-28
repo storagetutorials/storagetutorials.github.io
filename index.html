@@ -1,153 +1,203 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Storage Tutorials Github Page</title> 
-      <!-- Footer Start -->
-      <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.CSS" rel=" stylesheet" /> -->
-  <link rel="stylesheet" href="./style.css">
-</head>  
-  <header class="text-gray-600 body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-      </svg>
-      <span class="ml-3 text-xl">StorageTutorials</span>
-    </a>
-    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5 hover:text-gray-900" href="https://www.storagetutorials.com/" target="_blank">Visit Website</a>
-      <a class="mr-5 hover:text-gray-900" href="https://www.storagetutorials.com/storage-tutorial/" target="_blank">Storage Tutorials</a>
-      <a class="mr-5 hover:text-gray-900" href="https://www.storagetutorials.com/storage-tutorial/" target="_blank">Cloud</a>
-      <a class="mr-5 hover:text-gray-900" href="https://www.storagetutorials.com/devops/terraform/" target="_blank">Terraform Tutorials</a>
-    </nav>
-  </div>
-  </header>
 
- 
-  <section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-wrap -m-4">
-      <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://storagetutorials.github.io/ST-720x400.png" alt="blog">
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Cloud</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Terraform Destroy Specific Resource – 2 Methods</h1>
-            <p class="leading-relaxed mb-3">In this tutorial, you will learn how to destroy specific resources using Terraform with examples..</p>
-            <div class="flex items-center flex-wrap ">
-              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="https://www.storagetutorials.com/devops/terraform/" target="_blank" >Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>1.2K
-              </span>
-              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
-              </span>
-            </div>
-          </div>
-        </div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css"
+        integrity="sha512-apX8rFN/KxJW8rniQbkvzrshQ3KvyEH+4szT3Sno5svdr6E/CP0QE862yEeLBMUnCqLko8QaugGkzvWS7uNfFQ=="
+        crossorigin="anonymous" />
+        <script src="https://cdn.tailwindcss.com/3.1.6"></script>
+        <meta charSet="UTF-8" />
+    </head>
+    <body>
+      <div class="bg-white pt-4 pr-8 pb-4 pl-8">
+  <nav class="w-full">
+    <div class="flex w-full justify-between max-w-screen-2xl md:flex-row mt-auto mr-auto mb-auto ml-auto">
+      <div class="flex flex-row bg-white justify-between items-center mt-2 mb-2 md:m-0 hidden md:flex">
+        <a href="#" target="_blank" class="text-gray-600 text-center mr-6 font-medium
+            text-base">StorageTutorials.com</a>
+        <a href="#" class="text-gray-600 text-center mr-6 font-medium text-base">Tutorials</a>
+        <a href="https://www.storagetutorials.com/contact-us/" target="_blank" class="text-gray-600 text-center
+            font-medium text-base">Contact</a>
       </div>
-      <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://storagetutorials.github.io/ST-720x400.png" alt="blog">
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Linux</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Understanding the chmod Command in Linux</h1>
-            <p class="leading-relaxed mb-3">Want tro master chmod command? Check this tutorial and become Linux pro.</p>
-            <div class="flex items-center flex-wrap">
-              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="https://www.storagetutorials.com/understanding-the-chmod-command-in-linux/" target="_blank">Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>5.2K
-              </span>
-              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
-              </span>
-            </div>
-          </div>
-        </div>
+      <div class="bg-white flex-row flex items-center justify-center order-first md:order-none"></div>
+      <div class="flex justify-center items-center md:justify-start hidden md:flex">
+        <a href="https://www.facebook.com/StorageTutorials" target="_blank" class="h-9 w-24 text-white bg-blue-700
+            hover:bg-blue-900 hover:border-blue-900 border-2 flex items-center justify-center text-center
+            border-blue-700 rounded-lg text-lg font-normal mr-auto">Facebook</a>
       </div>
-      <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://storagetutorials.github.io/ST-720x400.png" alt="blog">
-          <div class="p-6">
-            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Linux</h2>
-            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">How to Grow XFS Filesystem in RHEL 7</h1>
-            <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-            <div class="flex items-center flex-wrap ">
-              <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0" href="https://www.storagetutorials.com/grow-xfs-filesystem-rhel7/" target="_blank">Learn More
-                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M5 12h14"></path>
-                  <path d="M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-              <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
-                </svg>1.2K
-              </span>
-              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                </svg>6
-              </span>
-            </div>
-          </div>
+      <div class="md:hidden flex items-center">
+        <div class="outline-none mobile-menu-button">
+          <svg fill="none" strokelinecap="round" stroke-linejoin="round" strokewidth="2" viewbox="0 0 24 24"
+              stroke="currentColor" class="w-6 h-6 text-gray-500 hover:text-green-500"><path d="M4 6h16M4 12h16M4
+              18h16"/></svg>
         </div>
       </div>
     </div>
+    <div class="hidden md:hidden md:hidden mobile-menu">
+      <div>
+        <div class="active">
+          <a href="#" class="text-gray-600 text-center mt-2 font-medium text-base">Product</a>
+          <a href="#" class="text-gray-600 text-center mt-2 font-medium text-base">Features</a>
+          <a href="#" class="text-gray-600 text-center mt-2 font-medium text-base">Pricing</a>
+          <button class="h-9 w-24 text-gray-600 bg-white border-2 border-white flex items-center justify-center
+              text-center rounded-lg text-lg font-normal mt-2 mr-auto ml-auto">Sign in</button>
+          <button class="h-9 w-24 text-white bg-blue-700 hover:bg-blue-900 hover:border-blue-900 border-2 flex
+              items-center justify-center text-center border-blue-700 rounded-lg text-lg font-normal mt-2 mr-auto
+              ml-auto">Sign up</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="bg-white mt-0 mr-auto mb-0 ml-auto pt-16 pr-4 pb-16 pl-4 sm:max-w-xl md:max-w-full lg:max-w-screen-xl
+    md:px-24 lg:px-8 lg:py-20">
+  <div class="shadow-xl pt-8 pr-8 pb-8 pl-8 sm:p-16">
+    <div class="flex flex-col lg:flex-row">
+      <div class="lg:mb-0 lg:w-1/2 lg:pr-5 mb-6">
+        <div>
+          <p class="inline text-blue-700 text-3xl font-bold tracking-tight font-sans sm:text-4xl sm:leading-none">2
+              Methods</p>
+          <p class="block text-3xl font-bold tracking-tight text-gray-900 leading-6 font-sans sm:text-4xl">Terraform
+              Destroy Specific Resource</p>
+        </div>
+      </div>
+      <div class="lg:w-1/2">
+        <p class="mb-4 text-base text-left text-gray-700">
+          <span style="color: rgb(75, 85, 99); font-size: medium;">In this tutorial, you will learn how to destroy
+              specific resources using Terraform with example</span>
+        </p>
+        <a href="https://www.storagetutorials.com/devops/terraform/" target="_blank" class="w-3/12 text-blue-700
+            text-center flex font-semibold items-center transition-colors duration-200 hover:text-blue-900">Learn
+            more</a>
+      </div>
+    </div>
   </div>
-  </section>
-
-  <!-- Footer Start -->
-
- <footer class="text-gray-600 body-font">
-  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-      </svg>
-      <span class="ml-3 text-xl">StorageTutorials</span>
-    </a>
-    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 www.storagetutorials.com —
-      <a href="https://twitter.com/StorageTutorial" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@StorageTutorial</a>
-    </p>
-    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-      <a class="text-gray-500" href="https://www.facebook.com/StorageTutorials" target="_blank">
-        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-        </svg>
-      </a>
-      <a class="ml-3 text-gray-500" href="https://twitter.com/StorageTutorial" target="_blank">
-        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-        </svg>
-      </a>
-    </span>
-   </div>
- </footer>
-  <!-- Footer -->
-
+</div>
+<div class="bg-white mt-0 mr-auto mb-0 ml-auto pt-16 pr-4 pb-16 pl-4 sm:max-w-xl md:max-w-full lg:max-w-screen-xl
+    md:px-24 lg:px-8 lg:py-20">
+  <div class="shadow-xl pt-8 pr-8 pb-8 pl-8 sm:p-16">
+    <div class="flex flex-col lg:flex-row">
+      <div class="lg:mb-0 lg:w-1/2 lg:pr-5 mb-6">
+        <div>
+          <p class="block text-3xl font-bold tracking-tight text-gray-900 leading-6 font-sans sm:text-4xl">How to
+              Install&nbsp;</p>
+          <p class="inline text-3xl font-bold tracking-tight text-gray-900 font-sans sm:text-4xl sm:leading-none">
+            <span style="letter-spacing: -0.9px;">MicroK8s on</span>
+            &nbsp;
+          </p>
+          <p class="inline text-blue-700 text-3xl font-bold tracking-tight font-sans sm:text-4xl
+              sm:leading-none">Ubuntu</p>
+        </div>
+      </div>
+      <div class="lg:w-1/2">
+        <p class="mb-4 text-base text-left text-gray-700">
+          <span style="color: rgb(75, 85, 99); font-size: medium;">Want to know how to install MicorK8s on an Ubuntu.
+              Check this article now.</span>
+        </p>
+        <a href="https://www.storagetutorials.com/how-to-install-microk8s-on-ubuntu/" target="_blank" class="w-3/12
+            text-blue-700 text-center flex font-semibold items-center transition-colors duration-200
+            hover:text-blue-900">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-white mt-0 mr-auto mb-0 ml-auto pt-16 pr-4 pb-16 pl-4 sm:max-w-xl md:max-w-full lg:max-w-screen-xl
+    md:px-24 lg:px-8 lg:py-20">
+  <div class="shadow-xl pt-8 pr-8 pb-8 pl-8 sm:p-16">
+    <div class="flex flex-col lg:flex-row">
+      <div class="lg:mb-0 lg:w-1/2 lg:pr-5 mb-6">
+        <div>
+          <p class="block text-3xl font-bold tracking-tight text-gray-900 leading-6 font-sans sm:text-4xl">Understanding
+              the</p>
+          <p class="inline text-3xl font-bold tracking-tight text-gray-900 font-sans sm:text-4xl sm:leading-none">CHMOD
+              command in</p>
+          <p class="inline text-blue-700 text-3xl font-bold tracking-tight font-sans sm:text-4xl
+              sm:leading-none">Linux</p>
+        </div>
+      </div>
+      <div class="lg:w-1/2">
+        <p class="mb-4 text-base text-left text-gray-700">
+          <span style="color: rgb(75, 85, 99); font-size: medium;">Want to master the <b>chmod command</b>? Check this
+              tutorial and become Linux pro.</span>
+        </p>
+        <a href="https://www.storagetutorials.com/understanding-the-chmod-command-in-linux/" target="_blank"
+            class="w-3/12 text-blue-700 text-center flex font-semibold items-center transition-colors duration-200
+            hover:text-blue-900">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="w-full bg-white pt-16 pr-4 pb-0 pl-4 mt-0 mr-auto mb-0 ml-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl
+    md:px-24 lg:px-8">
+  <div class="mt-0 mr-0 mb-8 ml-0 grid gap-10 row-gap-6 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="sm:col-span-2">
+      <p class="inline-flex text-xl font-bold text-gray-800 tracking-wide uppercase">Company</p>
+      <div class="mt-6 lg:max-w-sm">
+        <p class="text-sm text-gray-800">Storage tutorial provide easy to understand tutorials for all Sysadmins, SREs,
+            and DevOps Engineers.</p>
+      </div>
+    </div>
+    <div class="text-sm space-y-2">
+      <p class="tracking-wide text-base font-bold text-gray-900">Contacts</p>
+      <div class="flex"></div>
+      <div class="flex">
+        <p class="text-base text-gray-800 mt-0 mr-1 mb-0 ml-0">Email:</p>
+        <p class="text-base transition-colors duration-300 hover:text-deep-purple-800
+            text-deep-purple-accent-400">info@storagetutorials.com</p>
+      </div>
+      <div class="flex"></div>
+    </div>
+    <div>
+      <p class="tracking-wide text-base font-bold text-gray-900">Social</p>
+      <div class="space-x-3 flex items-center mt-1 mr-0 mb-0 ml-0">
+        <div class="transition-colors duration-300 hover:text-deep-purple-accent-400 text-gray-500"><i href="https://twitter.com/StorageTutorial"
+            class="fa-twitter h-5 fab mt-0 mr-2 mb-0 ml-0 text-gray-500"></i></div>
+        <div class="transition-colors duration-300 hover:text-deep-purple-accent-400 text-gray-500"><i href=""
+            class="fa-instagram h-5 fab mt-0 mr-2 mb-0 ml-0 text-gray-500"></i></div>
+        <div class="transition-colors duration-300 hover:text-deep-purple-accent-400 text-gray-500"><i href="https://www.facebook.com/StorageTutorials"
+            class="fa-facebook h-6 fab text-gray-500"></i></div>
+      </div>
+      <p class="text-sm text-gray-500 mt-4 mr-0 mb-0 ml-0"></p>
+    </div>
+  </div>
+  <div class="flex flex-col-reverse justify-between pt-5 pr-0 pb-10 pl-0 border-t lg:flex-row">
+    <p class="text-sm text-gray-600">© Copyright 2023 storagetutorials.com. All rights reserved.</p>
+    <div class="space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row flex flex-col items-center mt-0 mr-0 mb-3
+        ml-0">
+      <div>
+        <a href="https://www.storagetutorials.com/raid-5-calculator/" target="_blank" class="text-sm text-gray-600
+            transition-colors duration-300 hover:text-deep-purple-accent-400">RAID 5 Calculator</a>
+      </div>
+      <div>
+        <p class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Privacy
+            Policy</p>
+      </div>
+      <div>
+        <p class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Terms &amp;
+            Conditions</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-white mt-0 mr-auto mb-0 ml-auto pt-16 pr-4 pb-16 pl-4 sm:max-w-xl md:max-w-full lg:max-w-screen-xl
+    md:px-24 lg:px-8 lg:py-20"></div>
+      <script>
+          const btn = document.querySelector(".mobile-menu-button");
+          const menu = document.querySelector(".mobile-menu");
+          btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+          });
+      </script>
+      
+      
+    </body>
 </html>
